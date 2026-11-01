@@ -9,13 +9,44 @@
 
 ---
 
+## ⚡ Instant Normalized Output (Sample JSON)
+
+```json
+[
+  {
+    "website": "https://example-dentist.com",
+    "phone_numbers": [
+      "+1-555-0199"
+    ],
+    "whatsapp_urls": [
+      "https://wa.me/15550199"
+    ],
+    "emails": [
+      "info@example-dentist.com"
+    ]
+  }
+]
+```
+
+---
+
 ## ⚡ The Problem vs. The Solution
 
 Scraping local directories often misses direct communication channels. This tool crawls headers, footers, and contact pages using regex and DOM parsing to harvest WhatsApp click-to-chat links, direct landlines, and owner emails.
 
 - **Zero-Proxy Architecture:** Pure asynchronous execution designed for extreme speed (<50MB RAM).
-- **Multi-Interface Support:** Run via pure Python SDK, Node.js fetch, n8n / Make.com workflow, or Claude / Cursor MCP Agent.
+- **Multi-Interface Support:** Run via pure Python SDK, cURL, Node.js fetch, n8n / Make.com workflow, or Claude / Cursor MCP Agent.
 - **Production Reliable:** Backed by Apify's serverless infrastructure with 99.9% uptime SLA.
+
+---
+
+## 🚀 Quickstart: 1-Line cURL (Test in 2 Seconds)
+
+```bash
+curl -X POST "https://api.apify.com/v2/acts/deepaksheoran172~local-business-website-phone-whatsapp-scraper/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{\"websites\": [\"https://example-dentist.com\", \"https://example-plumbing.com\"]}'
+```
 
 ---
 
@@ -128,6 +159,14 @@ Each returned item includes normalized, RFC-compliant fields:
 - **Apify Store:** Available under pay-per-result pricing with a **60% Launch Discount**.
 - **Run Online:** Test it instantly on the [Apify Store Console](https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper).
 - **Fleet Hub:** Explore all 62 enterprise scrapers and MCP servers at [b2b-mcp-apify-scrapers-hub](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/).
+
+---
+
+## 🛡️ 100% Automated Self-Service & Zero-DM Guarantee
+
+- **Pure Self-Service:** Runs autonomously via Apify Cloud API. No sales calls, manual configuration, or onboarding tickets needed.
+- **Pay-Per-Result:** Only successful output items are billed. Zero-charge on failed executions.
+- **API Documentation:** For key creation, webhooks, and concurrency settings, see [Apify Docs](https://docs.apify.com/platform/actors/running/api).
 
 ---
 
