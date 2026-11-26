@@ -1,6 +1,7 @@
 # Local Business Phone & WhatsApp Scraper MCP Server & Python API
 
 [![Apify Store](https://img.shields.io/badge/Apify_Store-Run_on_Apify-blue?style=for-the-badge&logo=apify)](https://apify.com/deepaksheoran172/local-business-website-phone-whatsapp-scraper)
+[![deepakshe/local-business-website-phone-whatsapp-scraper-mcp-api MCP server](https://glama.ai/mcp/servers/deepakshe/local-business-website-phone-whatsapp-scraper-mcp-api/badges/score.svg)](https://glama.ai/mcp/servers/deepakshe/local-business-website-phone-whatsapp-scraper-mcp-api)
 [![MCP Server](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=for-the-badge)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Hub](https://img.shields.io/badge/Live_Catalog-B2B_Scrapers_Hub-emerald?style=for-the-badge)](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/)
@@ -27,6 +28,27 @@
   }
 ]
 ```
+
+---
+
+## 🤖 1-Click MCP Config (Claude Desktop, Cursor, Windsurf)
+
+```json
+{
+  "mcpServers": {
+    "local-business-website-phone-whatsapp-scraper": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server", "--actors", "deepaksheoran172/local-business-website-phone-whatsapp-scraper"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
+```
+
+* **Remote Streamable HTTP MCP:** `https://mcp.apify.com/?tools=deepaksheoran172/local-business-website-phone-whatsapp-scraper`
+* **AI Crawler Spec (`llms.txt`):** [llms.txt](./llms.txt)
 
 ---
 

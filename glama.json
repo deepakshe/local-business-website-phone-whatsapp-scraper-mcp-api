@@ -1,0 +1,8 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "deepakshe"
+  ],
+  "name": "local-business-website-phone-whatsapp-scraper-mcp-api",
+  "description": "Extract direct landlines, mobile numbers, WhatsApp click-to-chat links, and contact emails from local business websites. Built for local agency lead generation."
+}
